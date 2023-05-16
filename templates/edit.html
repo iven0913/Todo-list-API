@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit</title>
+</head>
+<body>
+<form method="post" action="{{ url_for('update', item_id=todo.id) }}">
+    <input type="text" name="todo" value="{{ todo.item }}">
+    <button type="submit">save</button>
+</form>
+{{ todo.id }}
+{{ todo.is_done }}
+{{ todo.date }}
+</body>
+</html>
